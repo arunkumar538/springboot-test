@@ -21,7 +21,7 @@ public class HelloControllerTest {
     public void testIndex() throws Exception {
         mockMvc.perform(get("/"))
                 .andExpect(status().isOk())
-                .andExpect(content().string(org.hamcrest.Matchers.containsString("Greetings from")));
+                .andExpect(content().string(org.hamcrest.Matchers.containsString("Greetings from Durga Prasad Depolyed java app in Kubernetes minikube..!!!")));
     }
 }
 
